@@ -1,9 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 /* #myVideo {
@@ -14,70 +13,71 @@
     min-height: 100%;
   } */
 
-img{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    filter: grayscale(80%);
-    opacity: 0.2;
+img {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  filter: grayscale(80%);
+  opacity: 0.2;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #0a0a0a, #272d35);
+}
+.calculator {
+  width: 380px;
+  height: 560px;
+  /* border:1px solid #717377; */
+  padding: 20px;
+  border-radius: 16px;
+  background: black;
+  opacity: 0.95;
+  /* box-shadow: 0px 5px 130px rgba(113,115,119,0.5); */
+  box-shadow: 1px 1px 30px rgba(96, 96, 96, 0.8);
+}
+input {
+  width: 100%;
 
+  border: none;
+  padding: 24px;
+  margin: 10px;
+  background: transparent;
+  /* box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.9); */
+  font-size: 40px;
+  text-align: right;
+  cursor: pointer;
+  color: white;
+  position: relative;
+  top: 10px;
+  right: 10px;
 }
-body{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(45deg,#0a0a0a,#272d35);
-
+input::placeholder {
+  color: #ffffff;
 }
-.calculator{
-    width: 380px;
-    height: 500px;
-    /* border:1px solid #717377; */
-    padding: 20px;
-    border-radius: 16px;
-    background: black;
-    opacity: .95;
-    /* box-shadow: 0px 5px 130px rgba(113,115,119,0.5); */
-    box-shadow: 1px 1px 30px rgba(96, 96, 96, 0.8);
-   
+button {
+  position: relative;
+  bottom: 15px;
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50%;
+  background: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  box-shadow: -1px -1px 10px rgba(108, 107, 107, 0.8);
+  cursor: pointer;
 }
-input{
-    width: 100%;
-    border: none;
-    padding: 24px;
-    margin: 10px;
-    background: transparent;
-    /* box-shadow: 0px 3px 15px rgba(84,84,84,0.1); */
-    font-size: 40px;
-    text-align: right;
-    cursor: pointer;
-    color: white;
+.equalBtn {
+  background-color: #fb7c14;
 }
-input::placeholder{
-    color: #ffffff;
-    
-}
-button{
-    border: none;
-    width: 60px;
-    height: 60px;
-    margin: 10px;
-    border-radius: 50%;
-    background: transparent;
-    color: #ffffff;
-    font-size: 20px;
-    box-shadow: -1px -1px 10px rgba(108, 107, 107, 0.8);
-    cursor: pointer;
-
-}
-.equalBtn{
-    background-color: #fb7c14;
-}
-.operator{
-    color: #6dee0a;
+.operator {
+  color: #6dee0a;
 }
